@@ -16,7 +16,7 @@ This skill should:
 - interrogate every material section of the target OpenSpec file (`design.md` or `tasks.md`)
 - walk each branch of the design tree and expose hidden coupling
 - resolve dependencies one-by-one (design or execution sequencing)
-- capture clarified outcomes directly back into the target file
+- capture clarified outcomes and update the target file
 
 ## When To Use
 
@@ -191,7 +191,7 @@ Use this ledger to ensure final edits are complete and internally consistent.
 
 ## Step 5: Update Target OpenSpec File (Required)
 
-At the end of the grilling phase, update the target file directly:
+At the end of the grilling phase, ask permission to update the target file:
 
 - `design.md` in design mode
 - `tasks.md` in tasks mode
