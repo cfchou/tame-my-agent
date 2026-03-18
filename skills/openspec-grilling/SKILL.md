@@ -1,7 +1,7 @@
 ---
 name: openspec-grilling
 description: Relentless OpenSpec interview skill for `design.md` and `tasks.md`. Use this whenever the user asks to review, critique, pressure-test, or de-risk an OpenSpec design or execution plan. Drive a branch-by-branch grilling, resolve decision and sequencing dependencies explicitly, and then update the relevant OpenSpec file with all agreed clarifications.
-license: Proprietary. LICENSE.txt has complete terms
+license: MIT
 ---
 
 # OpenSpec Grilling
@@ -135,7 +135,7 @@ Choose mode from user intent and available files:
 
 If both are in scope, start with `design.md`, then verify `tasks.md` still aligns.
 
-## Step 1: Build The Design Tree
+## Step 1: Build The Decision Tree
 
 Start by extracting a structure from the target file.
 
