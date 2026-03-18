@@ -1,0 +1,2 @@
+
+Inspired by https://github.com/mattpocock/skills/tree/main/grill-me
