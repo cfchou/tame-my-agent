@@ -1,4 +1,7 @@
-# Building Design Tree for `design.md`, extract:
+# Building Design Tree for a Design Document
+
+Applies to any design document — OpenSpec `design.md`, RFC, ADR, PRD, tech spec, or equivalent.
+
 
 - problem statement and goals
 - non-goals and constraints

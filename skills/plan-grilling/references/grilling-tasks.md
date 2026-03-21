@@ -1,4 +1,7 @@
-# Building Design Tree for `tasks.md`, extract:
+# Building Design Tree for an Execution Plan
+
+Applies to any execution plan — OpenSpec `tasks.md`, sprint plan, task list, checklist, or equivalent.
+
 
 - task hierarchy and decomposition boundaries
 - dependency graph and execution order
