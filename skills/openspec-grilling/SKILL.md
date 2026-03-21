@@ -1,6 +1,6 @@
 ---
 name: openspec-grilling
-description: Relentless OpenSpec interview skill for `design.md` and `tasks.md`. Use this whenever the user asks to review, critique, pressure-test, or de-risk an OpenSpec design or execution plan. Drive a branch-by-branch grilling, resolve decision and sequencing dependencies explicitly, and then update the relevant OpenSpec file with all agreed clarifications.
+description: Relentless interview skill for `design.md` and `tasks.md`. Use this whenever the user asks to review, critique, pressure-test, or de-risk an OpenSpec design or execution plan. Drive a branch-by-branch grilling, resolve decision and sequencing dependencies explicitly, and then update the relevant OpenSpec file with all agreed clarifications.
 license: MIT
 ---
 
@@ -20,7 +20,7 @@ This skill should:
 
 ## When To Use
 
-Use this skill whenever the user asks to:
+Use this skill whenever the user asks:
 
 - review or critique an OpenSpec design
 - pressure-test an OpenSpec proposal before implementation
@@ -59,7 +59,7 @@ Apply these throughout the interview and while editing `design.md`:
 
 Be relentless, but collaborative.
 
-- ask specific, decision-forcing questions
+- ask specific, decision-forcing questions, **one question at a time**.
 - challenge assumptions and implicit defaults
 - request concrete invariants, not intentions
 - keep a running map of unresolved decisions and blockers
@@ -226,6 +226,7 @@ When reporting back in chat:
 1. Show the resolved decisions and remaining blockers.
 2. Summarize key tradeoffs and why they were chosen.
 3. Confirm that the target OpenSpec file was updated and which sections changed.
+4. Follow the style of the target file such as diagrams, code snippets, tables.
 
 Keep language crisp, concrete, and evidence-driven.
 
