@@ -155,38 +155,13 @@ artifacts:
       
       ---
       
-      # Required Process Checklist
-      
-      You MUST create a task for each item below and complete them in order:
-      
-      1. **Explore project context**
-         - Review files, docs, recent commits, and provided context.
-      2. **Ask clarifying questions**
-         - Ask exactly one question at a time.
-         - Focus on purpose, constraints, and success criteria.
-      3. **Propose 2–3 approaches**
-         - Include trade-offs.
-         - Recommend one option with reasoning.
-      4. **Present the design in sections**
-         - Present one section at a time.
-         - After each section, ask for approval before continuing.
-         - If the user does not approve a section, revise that section and ask again.
-         - Do not continue to the next section until the current one is approved.
-      5. **Write the design doc**
-         - Write `design.md` only after all sections are approved.
-      
-      Do not skip steps. Do not reorder steps.
-      
-      ---
-      
       # Interaction Guidelines:
       
       - **One question at a time** - Never ask multiple questions in a single message.
       - **Ask for clarification - Never make assumptions when ambiguity exists.
       - **Prefer multiple-choice questions** when practical.
-      - **Explore alternatives** - Always propose 2-3 approaches before choosing one.
-      - **Validate incrementally** - Present one design section at a time and get approval before proceeding.
-      - **Be flexible** — If new ambiguity appears, pause and clarify before continuing. Revisit and revise earlier sections when needed.
+      - **Validate incrementally** - Present one section at a time and get approval before proceeding.
+      - **Be flexible** — If new ambiguity appears, pause and clarify before continuing. **Revisit and revise earlier sections when needed**.
       
       ---
       
@@ -210,16 +185,34 @@ artifacts:
           - Liskov Substitution Principle — abstractions should be safely replaceable by implementations.
           - Interface Segregation Principle — prefer small, focused interfaces over broad ones.
           - Dependency Inversion — depend on abstractions at boundaries, not concrete implementations.
+      - DO NOT propose unrelated refactoring.
+      - Follow existing patterns unless there is a good reason not to.
+      - If existing code has issues that materially affect the requested work (e.g. oversized files, unclear boundaries, tangled responsibilities), include targeted improvements in the design.
       
       ---
       
-      # When Working in an Existing Codebase:
-
-      - Explore the current structure before proposing changes.
-      - Follow existing patterns unless there is a good reason not to.
-      - If existing code has issues that materially affect the requested work (e.g. oversized files, unclear boundaries, tangled responsibilities), include targeted improvements in the design.
-      - DO NOT propose unrelated refactoring.
-      - Stay tightly scoped to the requested work.
+      # Required Process Checklist
+      
+      You MUST create a task for each item below and complete them in order:
+      
+      1. **Explore project context**
+         - Review files, docs, recent commits, and provided context.
+      2. **Ask clarifying questions**
+         - Ask exactly one question at a time.
+         - Focus on purpose, constraints, and success criteria.
+      3. **Propose 2–3 approaches**
+         - Include trade-offs.
+         - Recommend one option with reasoning.
+      4. **Prepare design.md**
+         - Create the file with the required sections placeholders.
+      5. **Write the design in sections**
+         - Present one section at a time.
+         - After each section, ask for approval before continuing.
+         - If the user does not approve a section, revise that section and ask again.
+         - If approved, fill up that section in the `design.md` before moving on.
+         - Do not continue to the next section until the current one is approved.
+      
+      Do not skip steps. Do not reorder steps.
       
       ---
       
@@ -386,7 +379,10 @@ artifacts:
       
         * Pseudo code of the key algorithm.
           ```
-          def key_algorithm
+          def key_algorithm():
+                # Step 1: Do this
+                # Step 2: Do that
+                # Step 3: Return result
           ```
       
       - [ ] 1.3: Run test to verify it passes**
@@ -396,7 +392,7 @@ artifacts:
       
       ```
       
-      Each task should be verifiable - you know when it's done.
+      Each task should be verifiable. That's how we know when it's done.
     requires:
       - specs
       - design
