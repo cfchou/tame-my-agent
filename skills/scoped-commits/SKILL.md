@@ -7,8 +7,6 @@ description: Use when writing, reviewing, or rewriting Git commit messages in Sc
 
 Use this skill to produce commit messages that foreground the part of the codebase being changed.
 
-Source: https://scopedcommits.com/
-
 ## Format
 
 Normal commits should use this structure:
