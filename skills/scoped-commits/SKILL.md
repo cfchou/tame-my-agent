@@ -45,6 +45,7 @@ Use Scoped Commits when the user asks to:
 - Prefer project vocabulary over generic labels.
 - Keep the description concise and behavior-focused.
 - Do not force `feat`, `fix`, `chore`, or other Conventional Commits type prefixes unless the project explicitly requires them.
+- Only follow local commit style when you explicitly want consistency with existing history.
 - Do not generate changelogs from Scoped Commits alone; commit logs and changelogs serve different audiences.
 
 ## Scope Selection
@@ -140,7 +141,7 @@ When generating a commit message:
 
 1. Inspect the change or user-provided summary.
 2. Infer the smallest useful scope from affected files, modules, or behavior.
-3. Check recent commit style if the repository is available.
+3. Check recent commit style if the repository is available, but only follow it when consistency with existing history is the explicit goal.
 4. Produce one recommended message first.
 5. Include alternatives only when the scope or wording is genuinely ambiguous.
 
